@@ -1,0 +1,10 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xdg-desktop-portal
+Source: https://github.com/flatpak/xdg-desktop-portal
+
+Files:
+ *
+Copyright:
+ Matthias Clasen <mclasen@redhat.com>
+ Alexander Larsson
+License: LGPL-2+

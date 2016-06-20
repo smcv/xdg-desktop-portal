@@ -1,0 +1,45 @@
+Source: xdg-desktop-portal
+Section: admin
+Priority: optional
+Maintainer: Mario Sanchez Prada <mario@endlessm.com>
+Build-Depends: debhelper (>= 9),
+	dh-autoreconf,
+	dbus,
+	dbus-x11,
+	debhelper (>= 9),
+	dh-autoreconf,
+	dh-exec,
+	docbook-xml,
+	docbook-xsl,
+	docbook-xsl-doc-html,
+	gobject-introspection,
+	gtk-doc-tools,
+        libflatpak-dev,
+	libglib2.0-dev,
+	libxml2-utils,
+	xsltproc,
+	pkg-config
+Standards-Version: 3.8.0
+Homepage: http://www.endlessm.com
+
+Package: xdg-desktop-portal
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: A portal frontend service for Flatpak and possibly other
+ desktop containment frameworks.
+ .
+ xdg-desktop-portal works by exposing a series of D-Bus interfaces known
+ as portals under a well-known name (org.freedesktop.portal.Desktop) and
+ object path (/org/freedesktop/portal/desktop).
+ .
+ The portal interfaces include APIs for file access, opening URIs,
+ printing and others.
+ .
+ This package contains the binary xdg-desktop-portal owning the D-Bus name
+ org.freedesktop.portal.Desktop, which is the frontend to the implementation
+ of the different desktop portals implemented by flatpak, so that sandboxed
+ applications can access certain services from the host machine.
+ .
+ Besides, it also contains the definition of the different interfaces that
+ will be implemented by both the frontend and the backends of those portals.
