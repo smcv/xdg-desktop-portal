@@ -5,6 +5,7 @@ Source: https://github.com/flatpak/xdg-desktop-portal
 Files:
  *
 Copyright:
- Matthias Clasen <mclasen@redhat.com>
- Alexander Larsson
+ © 2016 Matthias Clasen <mclasen@redhat.com>
+ © 2016 Alexander Larsson <alexl@redhat.com>
+ © 2016 Red Hat, Inc
 License: LGPL-2+
