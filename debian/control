@@ -43,3 +43,21 @@ Description: A portal frontend service for Flatpak and possibly other
  .
  Besides, it also contains the definition of the different interfaces that
  will be implemented by both the frontend and the backends of those portals.
+
+Package: xdg-desktop-portal-dev
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         xdg-desktop-portal (= ${binary:Version}),
+         pkg-config
+Description: A portal frontend service for Flatpak and possibly other
+ desktop containment frameworks.
+ .
+ xdg-desktop-portal works by exposing a series of D-Bus interfaces known
+ as portals under a well-known name (org.freedesktop.portal.Desktop) and
+ object path (/org/freedesktop/portal/desktop).
+ .
+ The portal interfaces include APIs for file access, opening URIs,
+ printing and others.
+ .
+ This package contains pkg-config metadata for xdg-desktop-portal.
