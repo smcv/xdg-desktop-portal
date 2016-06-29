@@ -3,22 +3,22 @@ Section: admin
 Priority: optional
 Maintainer: Mario Sanchez Prada <mario@endlessm.com>
 Build-Depends: debhelper (>= 9),
-	dh-autoreconf,
-	dbus,
-	dbus-x11,
-	debhelper (>= 9),
-	dh-autoreconf,
-	dh-exec,
-	docbook-xml,
-	docbook-xsl,
-	docbook-xsl-doc-html,
-	gobject-introspection,
-	gtk-doc-tools,
-        libflatpak-dev,
-	libglib2.0-dev,
-	libxml2-utils,
-	xsltproc,
-	pkg-config
+         dh-autoreconf,
+         dbus,
+         dbus-x11,
+         debhelper (>= 9),
+         dh-autoreconf,
+         dh-exec,
+         docbook-xml,
+         docbook-xsl,
+         docbook-xsl-doc-html,
+         gobject-introspection,
+         gtk-doc-tools,
+         libflatpak-dev (>= 0.6.6),
+         libglib2.0-dev,
+         libxml2-utils,
+         xsltproc,
+         pkg-config
 Standards-Version: 3.8.0
 Homepage: http://www.endlessm.com
 
