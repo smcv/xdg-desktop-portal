@@ -383,7 +383,10 @@ if enable_pytest
 
       exec = [pytest.full_path(), installed_tests_dir / 'tests']
       exec += pytest_args
-      exec += ['-o', 'cache_dir=/tmp/xdp-pytest-cache']
+      # Each test is run by ginsttest-runner with its current working
+      # directory set to a new temporary directory, so we can do this to
+      # avoid trying to write to /usr.
+      exec += ['-o', 'cache_dir=.']
       exec += ['-k', testname]
       exec = ' '.join(exec)
 
